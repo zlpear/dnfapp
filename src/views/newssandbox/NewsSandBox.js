@@ -11,6 +11,8 @@ import {Content} from "antd/es/layout/layout";
 
 import "./NewsSandBox.css"
 import Career from "./career/Career";
+import DungeonOverview from "./dungeon/DungeonOverview";
+import DungeonManager from "./dungeon/DungeonManager";
 
 
 function NewsSandBox() {
@@ -46,7 +48,8 @@ function NewsSandBox() {
                         <Route path="/user/list" element={<UserList/>}/>
                         <Route path="/role/list" element={<RoleList/>}/>
                         <Route path="/career" element={<Career/>}/>
-                        <Route path="/dungeons" element={<RoleList/>}/>
+                        <Route path="/dungeon/overview" element={<DungeonOverview/>}/>
+                        <Route path="/dungeon/manager" element={<DungeonManager/>}/>
                         <Route path="/" element={<Navigate to="/home" />} />
                         <Route path="/*" element={<NoPermission />} />
                     </Routes>

@@ -37,7 +37,9 @@ const items: MenuProps['items'] = [
     { type: 'divider' },
 
     getItem('地下城', 'sub2', <AppstoreOutlined />, [
-        getItem('幽暗岛', '5', <AppstoreOutlined />, [
+        getItem('总览', '/dungeon/overview', <AppstoreOutlined />),
+        getItem('管理', '/dungeon/manager', <AppstoreOutlined />),
+        getItem('幽暗岛', 'sub202', <AppstoreOutlined />, [
             getItem('Option 1', '1', <AppstoreOutlined />),
             getItem('Option 2', '2', <AppstoreOutlined />),
             getItem('Option 3', '3', <AppstoreOutlined />),
